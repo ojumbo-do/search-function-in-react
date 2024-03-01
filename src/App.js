@@ -1,5 +1,21 @@
+/*
+** The code uses the useState hook to manage the searchTerm state variable. 
+  The handleChange function is triggered when the search input changes, and it updates the searchTerm state.
+
+** The data variable is initialized with a slice of the employeesData array. 
+    The filter method is used to filter the employees based on whether their full name contains the searchTerm.
+
+** The EmployeesList component is used to render the filtered list of employees. 
+    It takes the onSearchInput, searchTerm, and data props, and uses them to render the EmployeeList component.
+
+** The handleSort function is used to handle the sort by options. It updates the sortBy state with the selected value.
+
+** The EmployeeList component takes an employee prop and renders the employee details.
+*/
+
 import { useState } from "react";
 
+//employees dummy
 const employeesData = [
   {
     id: 1,
